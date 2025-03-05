@@ -1,0 +1,55 @@
+{
+    "enable_transfer": true,
+    "gas_price_multiplier": 1.1,
+    "max_retries": 5,
+    "base_wait_time": 10,
+    "transfer_amount_percentage": 90,
+    "nft": {
+        "enable_nft": true,
+        "mint_count": {
+            "min": 2,
+            "max": 10
+        },
+        "burn_percentage": 20,
+        "supply": {
+            "min": 100,
+            "max": 1000
+        }
+    },
+    "contract": {
+        "enable_contract_deploy": true,
+        "contract_interactions": {
+            "enabled": true,
+            "count": {
+                "min": 5,
+                "max": 10
+            },
+            "types": ["setValue", "increment", "decrement", "reset", "contribute"]
+        }
+    },
+    "erc20": {
+        "enable_erc20": true,
+        "mint_amount": {
+            "min": 1000000,
+            "max": 10000000
+        },
+        "burn_percentage": 10,
+        "decimals": 18
+    },
+    "bridge": {
+        "enable_sepolia_to_ithaca": true,
+        "enable_ithaca_to_sepolia": true,
+        "sepolia_to_ithaca": {
+            "min_amount": 0.01,
+            "max_amount": 0.02,
+            "wait_for_confirmation": true,
+            "max_wait_time": 300000
+        },
+        "ithaca_to_sepolia": {
+            "min_amount": 0.001,
+            "max_amount": 0.002,
+            "wait_for_confirmation": false
+        },
+        "max_retries": 3
+    }
+  }

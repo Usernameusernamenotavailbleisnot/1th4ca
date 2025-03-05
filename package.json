@@ -1,0 +1,26 @@
+{
+  "name": "1th4ca",
+  "version": "1.0.0",
+  "description": "1th4ca",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "blockchain",
+    "nft"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "ethers": "^6.11.1",
+    "https-proxy-agent": "^7.0.2",
+    "lodash": "^4.17.21",
+    "ora": "^5.4.1",
+    "solc": "^0.8.28",
+    "web3": "^4.5.0"
+  }
+}
